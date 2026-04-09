@@ -187,7 +187,7 @@ const Contact = () => {
                       setFormData({ ...formData, eventType: value })
                     }
                   >
-                    <SelectTrigger className="bg-navy-900/50 border-white/10 text-white focus:ring-lime-400">
+                    <SelectTrigger id="eventType" className="bg-navy-900/50 border-white/10 text-white focus:ring-lime-400">
                       <SelectValue placeholder="Selecciona" />
                     </SelectTrigger>
                     <SelectContent className="bg-navy-800 border-white/10">
