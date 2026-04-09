@@ -98,7 +98,7 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="section-pinned bg-navy-900 z-10"
+      className="section-pinned bg-navy-900 z-10 min-h-screen"
     >
       {/* Background Image */}
       <div

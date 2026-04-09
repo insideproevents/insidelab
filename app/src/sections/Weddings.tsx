@@ -83,7 +83,7 @@ const Weddings = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="weddings" className="section-pinned bg-navy-900 z-50">
+    <section ref={sectionRef} id="weddings" className="section-pinned bg-navy-900 z-50 min-h-screen">
       {/* Left Text Panel */}
       <div
         ref={panelRef}

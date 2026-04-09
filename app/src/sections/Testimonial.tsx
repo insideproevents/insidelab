@@ -79,7 +79,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-pinned bg-navy-900 z-[80]">
+    <section ref={sectionRef} className="section-pinned bg-navy-900 z-[80] min-h-screen">
       {/* Quote Icon Background */}
       <div
         ref={quoteIconRef}

@@ -71,7 +71,7 @@ const About = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-pinned bg-navy-900 z-30">
+    <section ref={sectionRef} className="section-pinned bg-navy-900 z-30 min-h-screen">
       {/* Text Block */}
       <div
         ref={textRef}

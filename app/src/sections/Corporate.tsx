@@ -83,7 +83,7 @@ const Corporate = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="corporate" className="section-pinned bg-navy-900 z-40">
+    <section ref={sectionRef} id="corporate" className="section-pinned bg-navy-900 z-40 min-h-screen">
       {/* Left Image Panel */}
       <div
         ref={imageRef}
