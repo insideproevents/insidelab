@@ -83,7 +83,7 @@ const PrivateParties = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="parties" className="section-pinned bg-navy-900 z-[60]">
+    <section ref={sectionRef} id="parties" className="section-pinned bg-navy-900 z-[60] min-h-screen">
       {/* Left Image Panel */}
       <div
         ref={imageRef}
