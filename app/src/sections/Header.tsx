@@ -15,6 +15,7 @@ const Header = () => {
 
   const navItems = [
     { label: 'Servicios', href: '#services' },
+    { label: 'Fiestas Privadas', href: '#parties' },
     { label: 'Equipos', href: '#equipment' },
     { label: 'Marcas', href: '#brands' },
     { label: 'Contacto', href: '#contact' },
