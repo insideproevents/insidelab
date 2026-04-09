@@ -182,6 +182,7 @@ const Contact = () => {
                     Tipo de evento
                   </Label>
                   <Select
+                    name="eventType"
                     value={formData.eventType}
                     onValueChange={(value) =>
                       setFormData({ ...formData, eventType: value })
