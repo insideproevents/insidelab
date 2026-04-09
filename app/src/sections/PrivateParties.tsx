@@ -88,7 +88,7 @@ const PrivateParties = () => {
       <div
         ref={imageRef}
         className="absolute left-0 top-0 w-[56vw] h-full"
-        style={{ opacity: 0 }}
+        style={{ opacity: 1 }}
       >
         <img
           src="/party_crowd.jpg"
@@ -102,14 +102,14 @@ const PrivateParties = () => {
       <div
         ref={lineRef}
         className="absolute left-[56vw] top-[12vh] w-px h-[76vh] bg-white/10 origin-top"
-        style={{ transform: 'scaleY(0)' }}
+        style={{ transform: 'scaleY(1)' }}
       />
 
       {/* Right Text Panel */}
       <div
         ref={panelRef}
         className="absolute left-[56vw] top-0 w-[44vw] h-full bg-navy-900 flex items-center"
-        style={{ opacity: 0 }}
+        style={{ opacity: 1 }}
       >
         <div className="px-[6vw]">
           <p className="animate-item font-mono text-xs tracking-[0.12em] text-white/60 uppercase mb-6">
