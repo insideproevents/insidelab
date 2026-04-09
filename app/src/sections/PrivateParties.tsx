@@ -31,7 +31,7 @@ const PrivateParties = () => {
           trigger: section,
           start: 'top top',
           end: '+=130%',
-          pin: true,
+          pin: false,
           scrub: 0.6,
         },
       });
