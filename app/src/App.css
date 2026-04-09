@@ -1,0 +1,70 @@
+/* App-specific styles */
+
+/* Smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure pinned sections stack correctly */
+.section-pinned {
+  will-change: transform;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Custom focus styles */
+*:focus-visible {
+  outline: 2px solid #B8FF2C;
+  outline-offset: 2px;
+}
+
+/* Button hover lift effect */
+button, a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active, a:active {
+  transform: scale(0.98);
+}
+
+/* Image loading placeholder */
+img {
+  background-color: rgba(14, 18, 32, 0.5);
+}
+
+/* Card hover effects */
+.group:hover .card-content {
+  transform: translateY(-2px);
+}
+
+/* Text selection */
+::selection {
+  background: rgba(184, 255, 44, 0.3);
+  color: #F4F6FF;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .section-pinned {
+    min-height: 100svh;
+  }
+  
+  .font-display {
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSIDE:LAB - Backline Rentals & Producción de Eventos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Grain Overlay -->
+  <div class="grain-overlay"></div>
+  <div class="vignette"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">INSIDE<span class="accent">:</span>LAB</a>
+      <nav class="main-nav">
+        <div class="nav-item has-dropdown">
+          <a href="#backline" class="nav-link">Rental Backline</a>
+          <div class="dropdown">
+            <a href="#backline">Ver Equipos</a>
+            <a href="#quote">Cotizar</a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="#servicios" class="nav-link">Servicios</a>
+          <div class="dropdown">
+            <a href="#produccion">Producción</a>
+            <a href="#audio">Audio</a>
+            <a href="#video">Video</a>
+            <a href="#iluminacion">Iluminación</a>
+            <a href="#escenografia">Escenografía</a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <div class="dropdown">
+            <a href="#festivales">Festivales / Tours</a>
+            <a href="#eventos-privados">Eventos Privados</a>
+            <a href="#corporativos">Corporativos</a>
+          </div>
+        </div>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <a href="#quote" class="btn-quote">Cotizar</a>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#backline">Rental Backline</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#quote" class="btn-quote-mobile">Cotizar</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="public/hero_event_crowd.jpg" alt="Event crowd">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="label">Producción de Eventos & Rental</p>
+      <h1 class="hero-title">INSIDE<span class="accent">:</span>LAB</h1>
+      <p class="hero-subtitle">Desde backline hasta iluminación—construido para el momento.</p>
+      <div class="hero-buttons">
+        <a href="#backline" class="btn-primary">Ver Equipos</a>
+        <a href="#quote" class="btn-secondary">Cotizar</a>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M19 12l-7 7-7-7"/>
+      </svg>
+    </div>
+    <div class="socials">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+          <path d="m10 15 5-3-5-3z"/>
+        </svg>
+      </a>
+      <a href="https://wa.me/15550142200" target="_blank" aria-label="WhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Backline Section (Primero) -->
+  <section class="backline" id="backline">
+    <div class="container">
+      <div class="backline-breadcrumb">
+        <a href="#audio">Audio</a>
+        <a href="#video">Video</a>
+        <a href="#iluminacion">Iluminación</a>
+        <a href="#escenografia">Escenografía</a>
+        <a href="#backline" class="active">Backline</a>
+      </div>
+      <h2 class="backline-title">BACKLINE</h2>
+      <div class="backline-lines">//////////////</div>
+      <div class="backline-lines">//////////////</div>
+      <p class="backline-description">
+        INSIDE:LAB ofrece servicios completos de backline y rental de equipos. Consulta nuestra lista de inventario de backline. Un miembro del equipo de INSIDE:LAB se pondrá en contacto dentro de un día hábil.
+      </p>
+      <a href="#equipment" class="btn-gear-list">VER LISTA DE EQUIPOS</a>
+    </div>
+  </section>
+
+  <!-- Equipment Gallery -->
+  <section class="equipment-gallery" id="equipment">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/pioneer-cdj3000.png" alt="Pioneer CDJ-3000">
+          </div>
+          <h3 class="equipment-name">Pioneer CDJ-3000</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/pioneer-cdj2000nx2.png" alt="Pioneer CDJ2000nx2">
+          </div>
+          <h3 class="equipment-name">Pioneer CDJ2000nx2</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/pioneer-djm900nx2.png" alt="Pioneer DJM 900nx2">
+          </div>
+          <h3 class="equipment-name">Pioneer DJM 900nx2</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/pioneer-djmv10.png" alt="Pioneer DJM-V10">
+          </div>
+          <h3 class="equipment-name">Pioneer DJM-V10</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/pioneer-djma9.png" alt="Pioneer DJM-A9">
+          </div>
+          <h3 class="equipment-name">Pioneer DJM-A9</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/pioneer-djms11.png" alt="Pioneer DJM-S11">
+          </div>
+          <h3 class="equipment-name">Pioneer DJM-S11</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/pioneer-djms9.png" alt="Pioneer DJM S9">
+          </div>
+          <h3 class="equipment-name">Pioneer DJM S9</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/ampeg-svt.png" alt="Ampeg SVT Classic">
+          </div>
+          <h3 class="equipment-name">Ampeg SVT Classic</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/eden-wt800.png" alt="Eden wt-800">
+          </div>
+          <h3 class="equipment-name">Eden wt-800</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/gallien-krueger.png" alt="Gallien-Krueger 2001RB">
+          </div>
+          <h3 class="equipment-name">Gallien-Krueger 2001RB</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/fender-twin.png" alt="Fender Twin Rev">
+          </div>
+          <h3 class="equipment-name">Fender Twin Rev</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/fender-deville.png" alt="Fender Deville">
+          </div>
+          <h3 class="equipment-name">Fender Deville</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/marshall-jcm900.png" alt="Marshall JCM900">
+          </div>
+          <h3 class="equipment-name">Marshall JCM900</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/marshall-jcm2000.png" alt="Marshall Jcm2000">
+          </div>
+          <h3 class="equipment-name">Marshall Jcm2000</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/marshall-4x12.png" alt="Marshall 4x12 JCM900">
+          </div>
+          <h3 class="equipment-name">Marshall 4x12 JCM900</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/roland-jazz.png" alt="Roland Jazz Chorus">
+          </div>
+          <h3 class="equipment-name">Roland Jazz Chorus</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/swr-pro.png" alt="SWR Pro 750">
+          </div>
+          <h3 class="equipment-name">SWR Pro 750</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/vox-ac30.png" alt="Vox AC 30">
+          </div>
+          <h3 class="equipment-name">Vox AC 30</h3>
+        </div>
+        <div class="equipment-item">
+          <div class="equipment-image">
+            <img src="public/equipment/dw-collectors.png" alt="DW Collector's Series 4-Piece">
+          </div>
+          <h3 class="equipment-name">DW Collector's Series 4-Piece</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (Segundo) -->
+  <section class="services" id="servicios">
+    <p class="section-label">Servicios</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="public/service_corporate.jpg" alt="Eventos Corporativos">
+        <div class="service-overlay"></div>
+        <div class="service-content">
+          <h3>Eventos Corporativos</h3>
+          <p>Conferencias, lanzamientos y experiencias de marca—planificados de principio a fin.</p>
+          <a href="#corporativos" class="service-link">Explorar →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="public/service_wedding.jpg" alt="Bodas">
+        <div class="service-overlay"></div>
+        <div class="service-content">
+          <h3>Bodas</h3>
+          <p>Diseño, coordinación y proveedores—para que tu día sea perfecto y sin estrés.</p>
+          <a href="#bodas" class="service-link">Explorar →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="public/service_party.jpg" alt="Fiestas Privadas">
+        <div class="service-overlay"></div>
+        <div class="service-content">
+          <h3>Fiestas Privadas</h3>
+          <p>Backline, iluminación y equipo—construido para la pista de baile.</p>
+          <a href="#fiestas" class="service-link">Explorar →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section (Tercero) -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Nuestros Eventos</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="public/hero_event_crowd.jpg" alt="Festivales">
+          <div class="portfolio-overlay">
+            <h3>Festivales / Tours</h3>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="public/service_party.jpg" alt="Eventos Privados">
+          <div class="portfolio-overlay">
+            <h3>Eventos Privados</h3>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="public/service_corporate.jpg" alt="Corporativos">
+          <div class="portfolio-overlay">
+            <h3>Corporativos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="nosotros">
+    <div class="about-content">
+      <p class="section-label">Nosotros</p>
+      <h2 class="section-title">Construimos eventos que se sienten vivos.</h2>
+      <p class="about-text">INSIDE:LAB es un equipo pequeño con grandes capacidades—diseño de producción, rental de backline, iluminación y crew. Planeamos inteligente, cargamos limpio y mantenemos la sala conectada desde la primera señal hasta el último llamado.</p>
+      <div class="about-buttons">
+        <a href="#equipo" class="link-arrow">Conoce al equipo →</a>
+        <a href="#trabajo" class="btn-outline">Ver nuestro trabajo</a>
+      </div>
+    </div>
+    <div class="about-image">
+      <img src="public/about_mixer.jpg" alt="Audio mixer">
+    </div>
+  </section>
+
+  <!-- Quote Form Section (Antes del Footer) -->
+  <section class="quote-section" id="quote">
+    <div class="container">
+      <div class="quote-form-wrapper">
+        <h2 class="quote-title">SOLICITA UNA COTIZACIÓN:</h2>
+        <form class="quote-form" id="quoteForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Nombre:</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Apellido:</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Empresa:</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="service">¿Qué servicio necesitas?</label>
+            <input type="text" id="service" name="service">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje / Detalles:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-start-quote">ENVIAR COTIZACIÓN</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="tel:+15550142200" class="footer-link">+1 (555) 014-2200</a>
+          <a href="mailto:info@insidelab.com" class="footer-link">info@insidelab.com</a>
+          <p class="footer-address">123 Main Street, Suite 100<br>Los Angeles, CA 90001</p>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <a href="#produccion">Producción</a>
+          <a href="#rental">Rental de Equipos</a>
+          <a href="#diseno">Diseño de Eventos</a>
+          <a href="#management">Management</a>
+        </div>
+        <div class="footer-col">
+          <h4>Portfolio</h4>
+          <a href="#festivales">Festivales / Tours</a>
+          <a href="#eventos-privados">Eventos Privados</a>
+          <a href="#corporativos">Corporativos</a>
+          <a href="#ferias">Ferias</a>
+          <a href="#deportes">Eventos Deportivos</a>
+        </div>
+        <div class="footer-col">
+          <h4>SÍGUENOS:</h4>
+          <p>Recibe noticias y actualizaciones de INSIDE:LAB.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Tu email" required>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 INSIDE:LAB. Todos los derechos reservados</p>
+        <a href="#privacidad">POLÍTICA DE PRIVACIDAD</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/15550142200" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contáctanos por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      <span>¡Cotización enviada exitosamente!</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
