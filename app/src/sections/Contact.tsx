@@ -127,7 +127,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Form */}
           <div ref={formRef}>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} autoComplete="off" className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-white/80">
@@ -135,6 +135,7 @@ const Contact = () => {
                   </Label>
                   <Input
                     id="name"
+                    autoComplete="off"
                     value={formData.name}
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
@@ -151,6 +152,7 @@ const Contact = () => {
                   <Input
                     id="email"
                     type="email"
+                    autoComplete="off"
                     value={formData.email}
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
@@ -170,6 +172,7 @@ const Contact = () => {
                   <Input
                     id="eventDate"
                     type="date"
+                    autoComplete="off"
                     value={formData.eventDate}
                     onChange={(e) =>
                       setFormData({ ...formData, eventDate: e.target.value })
@@ -188,7 +191,7 @@ const Contact = () => {
                       setFormData({ ...formData, eventType: value })
                     }
                   >
-                    <SelectTrigger id="eventType" className="bg-navy-900/50 border-white/10 text-white focus:ring-lime-400">
+                    <SelectTrigger id="eventType" autoComplete="off" className="bg-navy-900/50 border-white/10 text-white focus:ring-lime-400">
                       <SelectValue placeholder="Selecciona" />
                     </SelectTrigger>
                     <SelectContent className="bg-navy-800 border-white/10">
@@ -208,6 +211,7 @@ const Contact = () => {
                 </Label>
                 <Textarea
                   id="message"
+                  autoComplete="off"
                   value={formData.message}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
