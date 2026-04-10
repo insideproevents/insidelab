@@ -113,7 +113,7 @@ const Services = () => {
     <section
       ref={sectionRef}
       id="services"
-      className="section-pinned bg-navy-900 z-20 min-h-screen"
+      className="section-pinned bg-navy-900 z-30 min-h-screen"
     >
       {/* Label */}
       <p
